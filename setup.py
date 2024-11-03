@@ -7,6 +7,9 @@
 # setup.py
 
 import setuptools
+from pathlib import Path
+directory = Path(__file__).parent
+long_description = (directory / "README.md").read_text()
 
 setuptools.setup(
     name = "dannie_su_calculator_4360",
